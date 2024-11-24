@@ -1,0 +1,1 @@
+# clickShop-automation
