@@ -1,14 +1,15 @@
 package co.tiendasjumbo.stepDefinitions;
 
 import co.tiendasjumbo.driver.SeleniumWebDriver;
-import co.tiendasjumbo.steps.CategoriaSteps;
+import co.tiendasjumbo.steps.CatalogoSteps;
 import io.cucumber.java.es.*;
 import net.thucydides.core.annotations.Steps;
 
 public class agregarProductoStepDefinitions {
 
     @Steps
-    CategoriaSteps categoriaSteps = new CategoriaSteps();
+    CatalogoSteps catalogoSteps = new CatalogoSteps();
+
     @Dado("el usuario esta en la pagina principal de Tiendas Jumbo")
     public void elUsuarioEstaEnLaPaginaPrincipalDeTiendasJumbo() {
         SeleniumWebDriver.chromeDrive("https://www.tiendasjumbo.co/");
@@ -17,8 +18,9 @@ public class agregarProductoStepDefinitions {
     @Cuando("selecciona una categoria y un producto")
     public void seleccionaUnaCategoriaYUnProducto() {
 
-        categoriaSteps.seleccionCategoria();
-        //productPage = homePage.selectProduct();
+        catalogoSteps.seleccionCategoria();
+        catalogoSteps.seleccionSubcategoria();
+
     }
 
     @Cuando("lo agrega al carrito de compras")
