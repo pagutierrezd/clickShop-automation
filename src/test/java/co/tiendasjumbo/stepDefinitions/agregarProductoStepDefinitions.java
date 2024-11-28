@@ -35,13 +35,15 @@ public class agregarProductoStepDefinitions {
 
     @Cuando("ingresa su correo electronico para asociar la compra")
     public void ingresaSuCorreoElectronicoParaAsociarLaCompra() {
-        //cartPage.enterEmail();
+
+        productoSteps.asociarCorreoCompra();
     }
 
     @Cuando("selecciona el método de entrega y completa el formulario")
     public void seleccionaElMétodoDeEntregaYCompletaElFormulario() {
-        //cartPage.selectDeliveryMethod();
-        //cartPage.completeForm();
+
+       productoSteps.seleccionMetodoEntrega();
+
     }
 
     @Entonces("el proceso de agregar al carrito se completa correctamente")

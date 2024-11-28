@@ -10,11 +10,21 @@ public class ProductoPage {
 
     private static By btnEnviarCorreo = By.xpath("//div[text()='Enviar']");
 
-    public static By getBtnAgregarCarrito() { return btnAgregarCarrito; }
+    public static By getBtnMetodoEntrega() {
+        return By.xpath("//*[@data-testid='base-modal']//*[@id='Recoge_en_tienda']");
+    }
 
-    public static By getTxtCorreoAsociarCompra() { return txtCorreoAsociarCompra; }
+    public static By getBtnAgregarCarrito() {
+        return btnAgregarCarrito;
+    }
 
-    public static By getBtnEnviarCorreo(){ return btnEnviarCorreo; }
+    public static By getTxtCorreoAsociarCompra() {
+        return txtCorreoAsociarCompra;
+    }
+
+    public static By getBtnEnviarCorreo() {
+        return btnEnviarCorreo;
+    }
 
     private ProductoPage() {
 
