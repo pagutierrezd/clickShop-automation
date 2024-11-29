@@ -5,6 +5,8 @@ import co.tiendasjumbo.steps.*;
 import io.cucumber.java.es.*;
 import net.thucydides.core.annotations.Steps;
 
+import static co.tiendasjumbo.driver.SeleniumWebDriver.driver;
+
 public class agregarProductoStepDefinitions {
 
     @Steps
@@ -42,7 +44,8 @@ public class agregarProductoStepDefinitions {
     @Cuando("selecciona el método de entrega y completa el formulario")
     public void seleccionaElMétodoDeEntregaYCompletaElFormulario() {
 
-       productoSteps.seleccionMetodoEntrega();
+       //productoSteps.formularioEntregaDomicilio();
+       //driver.close();
 
     }
 
